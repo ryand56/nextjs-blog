@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import Image from "next/image";
+import { Image } from "../Image";
 
 import { getSiteMetaData } from "@utils/helpers";
 import profilePicture from "@/content/assets/profile.png";
