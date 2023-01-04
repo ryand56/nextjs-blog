@@ -15,7 +15,7 @@ export function Layout({ children }) {
         <Header />
         <main>{children}</main>
         <footer className="text-lg font-light">
-          © {new Date().getFullYear()}, Built with{" "}
+          © {new Date().getFullYear()} Ryan Omasta, built with{" "}
           <a href="https://nextjs.org/">Next.js</a>
           &#128293;
         </footer>
@@ -75,7 +75,7 @@ const LargeTitle = () => (
           "dark:text-white"
         )}
       >
-        Next.Js Starter Blog
+        Ryan's Blog
       </a>
     </Link>
   </h1>
@@ -90,7 +90,7 @@ const SmallTitle = () => (
           "dark:text-white"
         )}
       >
-        Next.Js Starter Blog
+        Ryan's Blog
       </a>
     </Link>
   </h1>

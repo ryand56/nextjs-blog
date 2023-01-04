@@ -1,16 +1,16 @@
 {
   "siteMetadata": {
-    "title": "Next.js Starter Blog",
+    "title": "Ryan's Blog",
     "author": {
-      "name": "Jose Felix",
-      "summary": "who works building clean user interfaces with React.",
-      "link": "https://jfelix.info"
+      "name": "Ryan Omasta",
+      "summary": "who is working to learn new opportunities in different languages.",
+      "link": "https://ryand.ca"
     },
     "description": "A blog created with Next.js and Tailwind.css",
-    "siteUrl": "https://nextjs-starter-blog-new-demo.vercel.app/",
+    "siteUrl": "https://blog.ryand.ca/",
     "language": "en-US",
     "social": {
-      "twitter": "Jose_R_Felix"
+      "twitter": "elementemerald"
     }
   }
 }
