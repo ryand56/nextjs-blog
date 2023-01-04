@@ -7,6 +7,6 @@
   # Default build command.
   command = "npm run build && npx next export"
 
-  environment = { NODE_VERSION = "14" }
+  environment = { NODE_VERSION = "14", NETLIFY_NEXT_PLUGIN_SKIP = "true" }
 
 
