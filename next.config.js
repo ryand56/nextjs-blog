@@ -7,4 +7,8 @@ module.exports = {
 
     return config;
   },
+  reactStrictMode: true,
+  images: {
+    loader: "custom"
+  }
 };
