@@ -3,7 +3,7 @@
     "title": "Ryan's Blog",
     "author": {
       "name": "Ryan Omasta",
-      "summary": "who is working to learn new opportunities in different languages.",
+      "summary": "who is working to learn new opportunities in and around software and the web.",
       "link": "https://ryand.ca"
     },
     "description": "A blog created with Next.js and Tailwind.css",
