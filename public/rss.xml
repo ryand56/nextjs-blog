@@ -4,7 +4,7 @@
         <title>Ryan's Blog</title>
         <link>https://blog.ryand.ca/</link>
         <description>undefined</description>
-        <lastBuildDate>Wed, 04 Jan 2023 18:42:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Jan 2023 01:37:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-US</language>
@@ -16,7 +16,7 @@
             <pubDate>Wed, 04 Jan 2023 07:00:00 GMT</pubDate>
             <description><![CDATA[Hello, world!]]></description>
             <content:encoded><![CDATA[
-This is my first blog post.]]></content:encoded>
+This is my first blog post. Nothing too special here.]]></content:encoded>
         </item>
     </channel>
 </rss>
