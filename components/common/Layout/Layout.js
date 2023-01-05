@@ -4,13 +4,20 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { useTheme } from "next-themes";
+import Head from "next/head";
 import Image from "next/image";
 
+import { getSiteMetaData } from "@utils/helpers";
 import RSSIcon from "@assets/svg/rss.svg";
 
 export function Layout({ children }) {
+  const { social } = getSiteMetaData();
+
   return (
     <div className="w-full min-h-screen dark:bg-gray-700 dark:text-white">
+      <Head>
+        <link rel="shortcut icon" type="image/png" href={`https://github.com/${social.github}.png`} />
+      </Head>
       <div className="max-w-screen-sm px-4 py-12 mx-auto antialiased font-body">
         <Header />
         <main>{children}</main>
