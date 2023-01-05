@@ -4,7 +4,7 @@
         <title>Ryan's Blog</title>
         <link>https://blog.ryand.ca/</link>
         <description>undefined</description>
-        <lastBuildDate>Thu, 05 Jan 2023 01:37:51 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 05 Jan 2023 04:56:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en-US</language>
@@ -17,6 +17,19 @@
             <description><![CDATA[Hello, world!]]></description>
             <content:encoded><![CDATA[
 This is my first blog post. Nothing too special here.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[My experience with PKI (and Cybersecurity in general)]]></title>
+            <link>https://blog.ryand.ca/posts/my-experience-with-pki--and-cybersecurity-in-general</link>
+            <guid>my-experience-with-pki--and-cybersecurity-in-general</guid>
+            <pubDate>Wed, 04 Jan 2023 07:00:00 GMT</pubDate>
+            <description><![CDATA[It's a scary world out there, thank god for all of technology.]]></description>
+            <content:encoded><![CDATA[
+Many people have had an experience with Cybersecurity in general, whether it may be visiting a sketchy web page or getting scammed OTP. However, you have to take in mind, **is this too good to be true?** Even a tiny ad could catch you, but we all have adblockers nowadays.
+
+More security and bug squashing has happened throughout the years and more innovation for a better secure web have been coming up. I thought, why not contribute? And I did.
+
+I originally tested a library that allows you to sign your own certificates in C# using the [BouncyCastle C# API](https://github.com/bcgit/bc-csharp). I'm sure there are other libraries for different languages out there, take a look and see what you find. For now, I have expanded on this and made a very "functional" backend that you can use [here](https://github.com/EmeraldSys/emeraldsys-pki-api).]]></content:encoded>
         </item>
     </channel>
 </rss>
