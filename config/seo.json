@@ -10,7 +10,8 @@
     "siteUrl": "https://blog.ryand.ca/",
     "language": "en-US",
     "social": {
-      "twitter": "elementemerald"
+      "twitter": "elementemerald",
+      "github": "elementemerald"
     }
   }
 }
