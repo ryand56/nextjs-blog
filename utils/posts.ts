@@ -14,17 +14,30 @@ export function getPostsFolders() {
 }
 
 // Get day in format: Month day, Year. e.g. April 19, 2020
-function getFormattedDate(date) {
-  const options = { year: "numeric", month: "long", day: "numeric" };
+function getFormattedDate(date: Date) {
+  const options: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" };
   const formattedDate = date.toLocaleDateString("en-US", options);
 
   return formattedDate;
 }
 
+export interface Frontmatter {
+  title?: string;
+  description?: string;
+  date: string;
+}
+
+export interface Post {
+  frontmatter: Frontmatter;
+  content: string;
+  excerpt: string;
+  slug: string;
+}
+
 export function getSortedPosts() {
   const postFolders = getPostsFolders();
 
-  const posts = postFolders
+  const posts: Post[] = postFolders
     .map(({ filename, directory }) => {
       // Get raw content from file
       const markdownWithMetadata = fs
@@ -50,7 +63,7 @@ export function getSortedPosts() {
       };
     })
     .sort(
-      (a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+      (a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime()
     );
 
   return posts;

@@ -3,7 +3,7 @@ import fs from "fs";
 import { Feed } from "feed";
 
 import { getSiteMetaData } from "./helpers";
-import { getSortedPosts } from "./posts";
+import { Post, getSortedPosts } from "./posts";
 
 export function generateRssPostsFeed() {
   const { title, siteUrl, language, author } = getSiteMetaData();
@@ -25,7 +25,7 @@ export function generateRssPostsFeed() {
   });
 
   posts.forEach(
-    ({ frontmatter: { title, description, date }, content, slug }) => {
+    ({ frontmatter: { title, description, date }, content, slug }: Post) => {
       feed.addItem({
         title,
         description,

@@ -13,10 +13,12 @@ export default function Home({ posts }) {
         <article key={slug}>
           <header className="mb-2">
             <h3 className="mb-2">
-              <Link href={"/posts/[slug]"} as={`/posts/${slug}`}>
-                <a className="text-4xl font-bold text-yellow-600 font-display">
+              <Link
+                href={"/posts/[slug]"}
+                as={`/posts/${slug}`}
+                className="text-4xl font-bold text-yellow-600 font-display"
+                >
                   {title}
-                </a>
               </Link>
             </h3>
             <span className="text-sm">{date}</span>

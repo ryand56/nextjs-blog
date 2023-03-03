@@ -36,18 +36,23 @@ export default function Post({ post, frontmatter, nextPost, previousPost }) {
 
       <nav className="flex flex-wrap justify-between mb-10">
         {previousPost ? (
-          <Link href={"/posts/[slug]"} as={`/posts/${previousPost.slug}`}>
-            <a className="text-lg font-bold">
-              ← {previousPost.frontmatter.title}
-            </a>
-          </Link>
+          (<Link
+            href={"/posts/[slug]"}
+            as={`/posts/${previousPost.slug}`}
+            className="text-lg font-bold">
+            ←{previousPost.frontmatter.title}
+
+          </Link>)
         ) : (
           <div />
         )}
         {nextPost ? (
-          <Link href={"/posts/[slug]"} as={`/posts/${nextPost.slug}`}>
-            <a className="text-lg font-bold">{nextPost.frontmatter.title} →</a>
-          </Link>
+          (<Link
+            href={"/posts/[slug]"}
+            as={`/posts/${nextPost.slug}`}
+            className="text-lg font-bold">
+            {nextPost.frontmatter.title}
+          </Link>)
         ) : (
           <div />
         )}

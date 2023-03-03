@@ -22,11 +22,14 @@ const defaultSerif = [
   "serif",
 ];
 
+/** @type {import("tailwindcss").Config} */
 module.exports = {
   mode: "jit",
-  purge: [
+  content: [
+    "./assets/**/*.{js,ts,jsx,tsx,css}",
     "./components/**/*.{js,ts,jsx,tsx,css}",
     "./pages/**/*.{js,ts,jsx,tsx}",
+    "./utils/**/*.{js,ts,jsx,tsx}"
   ],
   darkMode: "class",
   theme: {
